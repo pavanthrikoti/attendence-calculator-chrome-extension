@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MITS Attendance Analyzer",
+  "version": "1.0",
+  "description": "Calculates average attendance and highlights each subject row by performance.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://mitsims.in/studentIndex.html"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
