@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "MITS Madanapalle Attendance Calculator",
   "version": "1.0",
-  "description": "One click. Instant results. 99.99% accurate attendance — faster, smarter, and time-saving.",
+  "description": "Seamless Attendance, Perfect Accuracy 🚀 One click. Instant results. ✅ 99.99% precision tracking. ⏳ Faster, smarter, and effortlessly time-saving.",
   "permissions": ["scripting", "activeTab"],
   "action": {
     "default_popup": "popup.html",
