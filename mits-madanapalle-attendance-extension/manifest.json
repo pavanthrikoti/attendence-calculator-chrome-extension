@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "MITS Attendance Analyzer",
+  "name": "MITS Madanapalle Attendence Calculator",
   "version": "1.0",
-  "description": "Calculates average attendance and highlights each subject row by performance.",
+  "description": "One click. Instant results. 99.99% accurate attendance — faster, smarter, and time-saving.",
   "permissions": ["scripting", "activeTab"],
   "action": {
     "default_popup": "popup.html",
