@@ -4,19 +4,54 @@
   <meta charset="UTF-8">
   <title>MITS Attendance</title>
   <style>
+    /* Basic body styles */
     body {
-      font-family: Arial, sans-serif;
-      padding: 15px;
-      width: 260px;
-      background: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      width: 280px;
+      background: #f4f7fb;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    /* Header styles */
     h2 {
-      font-size: 16px;
-      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #2c3e50;
     }
+
+    /* Output box styles */
     #output {
       font-size: 14px;
-      color: #333;
+      color: #555;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    .footer {
+      font-size: 12px;
+      color: #7f8c8d;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    /* Hover effect for footer link */
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -24,6 +59,10 @@
   <h2>MITS Attendance Analyzer</h2>
   <div id="output">
     Open the MITS attendance page and refresh the extension to see results in the browser console.
+  </div>
+  
+  <div class="footer">
+    Developed by <span style="font-weight: bold;">22691A05F7 III-CSE-C (2022-26)</span>
   </div>
 </body>
 </html>
