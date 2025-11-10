@@ -1,12 +1,19 @@
 {
   "manifest_version": 3,
   "name": "MITS Madanapalle Attendance Calculator",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Seamless Attendance, Perfect Accuracy 🚀 One click. Instant results. ✅ 99.99% precision tracking. ⏳ Faster, smarter, and effortlessly time-saving.",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
   },
   "icons": {
     "16": "icon.png",
@@ -15,11 +22,16 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://mitsims.in/studentIndex.html"],
+      "matches": [
+        "http://mitsims.in/studentIndex.html",
+        "https://mitsims.in/studentIndex.html"
+      ],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
+  ],
+  "host_permissions": [
+    "http://mitsims.in/*",
+    "https://mitsims.in/*"
   ]
 }
-
-
