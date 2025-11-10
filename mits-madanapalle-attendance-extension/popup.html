@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>MITS Attendance</title>
   <style>
-    /* Basic body styles */
     body {
       font-family: 'Arial', sans-serif;
       padding: 20px;
@@ -16,7 +15,6 @@
       align-items: center;
     }
 
-    /* Header styles */
     h2 {
       font-size: 20px;
       font-weight: 600;
@@ -24,7 +22,6 @@
       color: #2c3e50;
     }
 
-    /* Output box styles */
     #output {
       font-size: 14px;
       color: #555;
@@ -34,9 +31,24 @@
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       width: 100%;
       text-align: center;
+      min-height: 60px;
     }
 
-    /* Footer styles */
+    button {
+      margin-top: 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
     .footer {
       font-size: 12px;
       color: #7f8c8d;
@@ -48,21 +60,21 @@
       color: #2980b9;
       text-decoration: none;
     }
-
-    /* Hover effect for footer link */
-    .footer a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
   <h2>MITS Attendance Analyzer</h2>
+
   <div id="output">
-    Open the MITS attendance page and refresh the extension to see results in the browser console.
+    Click below to calculate your current attendance 👇
   </div>
+
+  <button id="calculateBtn">Calculate Attendance</button>
   
   <div class="footer">
     Developed by <span style="font-weight: bold;">22691A05F7 III-CSE-C (2022-26)</span>
   </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>
